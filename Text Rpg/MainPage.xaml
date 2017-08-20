@@ -7,7 +7,70 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Page.DataContext>
+        <local:GameViewmodel/>
+    </Page.DataContext>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+        
+        <StackPanel>
+           
+            <!--Navn-->
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Navn" FontSize="40"/>
+                <TextBox Text="{Binding GetStr, Mode=TwoWay}" />
+            </StackPanel>
+            
+            <!--Strength-->
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Str" FontSize="40"/>
+                <TextBox />
+            </StackPanel>
+            
+            <!--Intelligence-->
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Int" FontSize="40"/>
+                <TextBox />
+            </StackPanel>
+            
+            <!--Dex-->
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="dex" FontSize="40"/>
+                <TextBox />
+            </StackPanel>
+            
+            <!--Endurance-->
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="endu" FontSize="40"/>
+                <TextBox />
+            </StackPanel>
+            
+            <!--cunning-->
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="cunning" FontSize="40"/>
+                <TextBox />
+            </StackPanel>
+            
+            <!--Mana-->
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="mana" FontSize="40"/>
+                <TextBox />
+            </StackPanel>
+            
+            <!--Health-->
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="health" FontSize="40"/>
+                <TextBox />
+            </StackPanel>
+
+        </StackPanel>
     </Grid>
 </Page>
