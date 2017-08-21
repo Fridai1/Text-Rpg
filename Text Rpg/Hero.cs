@@ -34,9 +34,10 @@
             set { _Strength = value; }
         }
 
-        public void increaseINT()
+        public int GetInt
         {
-            _Intelligence = _Intelligence + 1;
+            get { return _Intelligence; }
+            set { _Intelligence = value; }
         }
     }
 }
