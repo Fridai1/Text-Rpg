@@ -95,12 +95,15 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GameViewmodel.cs" />
-    <Compile Include="Hero.cs" />
-    <Compile Include="Human.cs" />
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="VM\Base\GameMasterBase.cs" />
+    <Compile Include="VM\Normal\GameViewmodel.cs" />
+    <Compile Include="Domain\Base\Hero.cs" />
+    <Compile Include="VM\Base\HeroVMBase.cs" />
+    <Compile Include="Domain\normal\Human.cs" />
+    <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -124,7 +127,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainPage.xaml">
+    <Page Include="View\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

@@ -14,26 +14,25 @@
 
         
         <StackPanel>
-           
             <!--Navn-->
             
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="Navn" FontSize="40"/>
-                <TextBox Text="{Binding GetStr, Mode=TwoWay}" />
+                <TextBox Text="{Binding DetailsViewModel.GetName, Mode=TwoWay}"  />
             </StackPanel>
-            
+           
             <!--Strength-->
-
+            
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="Str" FontSize="40"/>
-                <TextBox />
+                <TextBox Text="{Binding DetailsViewModel.DomainObject.GetStr, Mode=TwoWay}"/>
             </StackPanel>
             
             <!--Intelligence-->
 
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="Int" FontSize="40"/>
-                <TextBox />
+                <TextBox Text="{}"/>
             </StackPanel>
             
             <!--Dex-->
@@ -46,7 +45,7 @@
             <!--Endurance-->
 
             <StackPanel Orientation="Horizontal">
-                <TextBlock Text="endu" FontSize="40"/>
+                <TextBlock Text="endurance" FontSize="40"/>
                 <TextBox />
             </StackPanel>
             
